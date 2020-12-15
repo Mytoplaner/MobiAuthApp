@@ -4,7 +4,7 @@ require_once 'config.inc.php';
 $email    = $_POST['email'];
 $password = $_POST['password'];
 
-$result = $conn->query("SELECT * FROM mphp4_users WHERE username = '$email' AND password = '$password'");
+$result = $conn->query("SELECT * FROM Gebruikers WHERE Email = '$email' AND Wachtwoord = '$password'");
 
 if (mysqli_num_rows($result) == 1) {
 
